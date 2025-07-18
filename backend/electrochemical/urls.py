@@ -20,9 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
-    path('api/experiments/', include('experiments.urls')),
-    path('api/analysis/', include('analysis.urls')),
+    # path('api/', include('api.urls')),
+    # path('api/experiments/', include('experiments.urls')),
+    # path('api/analysis/', include('analysis.urls')),
 ]
 
 # 开发环境下的静态文件服务

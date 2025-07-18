@@ -44,7 +44,7 @@ const actions = {
       commit('SET_DEVICE_INFO', device)
       
       // 设置数据接收回调
-      BluetoothService.onDataReceived((data) => {
+      BluetoothService.setDataCallback((data) => {
         commit('ADD_RECEIVED_DATA', data)
       })
       

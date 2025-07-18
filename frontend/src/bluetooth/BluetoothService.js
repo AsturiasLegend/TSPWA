@@ -67,7 +67,7 @@ class BluetoothService {
     this.cleanup()
   }
   
-  onDisconnected(event) {
+  onDisconnected() {
     console.log('Bluetooth device disconnected')
     this.cleanup()
     
@@ -120,11 +120,11 @@ class BluetoothService {
     }
   }
   
-  onDataReceived(callback) {
+  setDataCallback(callback) {
     this.dataCallback = callback
   }
   
-  onDisconnected(callback) {
+  setDisconnectCallback(callback) {
     this.disconnectCallback = callback
   }
   
