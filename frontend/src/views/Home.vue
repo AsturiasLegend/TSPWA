@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <el-row :gutter="20">
+    <el-row :gutter="16" class="responsive-row">
       <!-- 设备状态卡片 -->
-      <el-col :span="8">
+      <el-col :xs="24" :sm="12" :md="8" :lg="8">
         <el-card class="status-card">
           <template #header>
             <div class="card-header">
@@ -31,7 +31,9 @@
               <el-button 
                 :type="bluetoothConnected ? 'danger' : 'primary'"
                 @click="toggleConnection"
-                :loading="connecting">
+                :loading="connecting"
+                :size="isMobile ? 'small' : 'default'"
+                block>
                 {{ bluetoothConnected ? '断开连接' : '连接设备' }}
               </el-button>
             </div>
@@ -40,7 +42,7 @@
       </el-col>
       
       <!-- 快速实验卡片 -->
-      <el-col :span="8">
+      <el-col :xs="24" :sm="12" :md="8" :lg="8">
         <el-card class="experiment-card">
           <template #header>
             <div class="card-header">
