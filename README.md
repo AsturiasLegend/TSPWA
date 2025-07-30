@@ -280,10 +280,6 @@ sudo journalctl -u electrochemical -f
 4. 推送到分支
 5. 创建Pull Request
 
-## 许可证
-
-MIT License
-
 ## 联系方式
 
 如有问题，请联系项目维护者。
